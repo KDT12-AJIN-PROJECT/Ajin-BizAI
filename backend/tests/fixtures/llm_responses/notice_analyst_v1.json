@@ -1,0 +1,125 @@
+{
+  "target": "중소·중견 제조기업 (업력 3년 이상)",
+  "benefit": "총 사업비의 70% 이내, 최대 2억 원",
+  "total_budget": "195.5억원 내외 (137개 과제 내외)",
+  "deadline": "2026-06-15T18:00",
+  "application_period_start": "2026-04-06",
+  "submission_system": "IRIS (www.iris.go.kr)",
+  "evaluation_criteria": [
+    {"name": "기술성", "weight": 40, "scope": "section"},
+    {"name": "사업성", "weight": 30, "scope": "section"},
+    {"name": "수행역량", "weight": 30, "scope": "document"}
+  ],
+  "process_steps": [
+    "신청·접수",
+    "신청자격 검토",
+    "선정평가 (서면/대면)",
+    "이의신청",
+    "최종선정",
+    "협약 및 정부지원연구개발비 지급"
+  ],
+  "required_documents": [
+    "사업계획서",
+    "사업자등록증",
+    "재무제표(2년)",
+    "4대보험가입자명부"
+  ],
+  "exclusion_conditions": [
+    "최근 3년 내 동일 사업 수혜 기업 제외"
+  ],
+  "important_keywords": [
+    "글로벌협력형R&D",
+    "사전기획형",
+    "예비연구형",
+    "자유공모형",
+    "기업부설연구소"
+  ],
+  "ai_interpretation": {
+    "선정 가능성을 높이는 핵심 요건": [
+      "필수 자격: 중소기업기본법 제2조 중소기업 + 기업부설연구소 보유 (연구개발전담부서 불인정)",
+      "비수도권 가점 2점 신설 → 사업장 위치 확인 후 활용",
+      "기술성 40점 비중이 가장 큼 → 기술 차별성·실현가능성 정량 지표 제시"
+    ],
+    "제안서 작성 전략": [
+      "글로벌협력형 — 해외협력기관과의 구체적 공동연구 계획·MOU 등 사전 확보 권장",
+      "정량적 사업화 지표(매출·고용·수출) 우선 제시"
+    ],
+    "탈락 방지 체크리스트": [
+      "⚠️ 접수 마감 18시 정각 — 17시 이전 제출 완료 권장 (전산 폭주 위험)",
+      "⚠️ 부채비율 1,000% 초과 또는 자본전액잠식 시 지원 제외 (예외조항 충족 시 가능)",
+      "신청자격 서류·가점 증빙은 추가/수정 제출 불가 — 초기 제출에서 완비",
+      "사전 확보: 해외협력기관 의향서·MOU, 국제공동연구계약 초안"
+    ],
+    "이 공고만의 특이점": [
+      "해외협력기관 10곳 중 선택 (프라운호퍼·MIT·퍼듀·TNO 등) → RFP 개별 검토",
+      "기술료 매출 기반 약정 경상기술료 — 사업 종료 후 5년간 매출 추적"
+    ]
+  },
+  "extras": [
+    {
+      "category": "가점",
+      "label": "비수도권 소재 기업 가점",
+      "value": "비수도권 소재 기업에 대한 가점 2점 신설",
+      "value_type": "text",
+      "source_page": 2,
+      "source_quote": "(가점 신설) 비수도권 소재 기업에 대한 가점 신설(2점)",
+      "confidence": 0.95,
+      "importance": "high"
+    },
+    {
+      "category": "가점",
+      "label": "정부 표창 가점 확대",
+      "value": "대통령·국무총리 포상 등 정부 표창 가점 인정 범위 확대",
+      "value_type": "text",
+      "source_page": 2,
+      "source_quote": "(가점 확대) 대통령, 국무총리 포상 및 시상을 포함하여 정부 표창 가점 인정 범위 확대",
+      "confidence": 0.92,
+      "importance": "medium"
+    },
+    {
+      "category": "사업 구조",
+      "label": "세부과제 3종",
+      "value": ["사전기획형", "예비연구형", "자유공모형(혁신기업형)"],
+      "value_type": "list",
+      "source_page": 3,
+      "source_quote": "사전기획형(사전연구) / 예비연구형(사전연구) / 자유공모형(혁신기업형)",
+      "confidence": 0.98,
+      "importance": "high"
+    },
+    {
+      "category": "사업 구조",
+      "label": "세부과제별 예산 분배",
+      "value": [
+        {"구분": "사전기획형", "예산": "110억원 내외", "과제수": "100개 내외"},
+        {"구분": "예비연구형", "예산": "5.5억원 내외", "과제수": "5개 내외"},
+        {"구분": "자유공모형(혁신기업형)", "예산": "80억원 내외", "과제수": "32개 내외"}
+      ],
+      "value_type": "table",
+      "source_page": 3,
+      "source_quote": "사전기획형 110억원 내외 100개 내외 / 예비연구형 5.5억원 내외 5개 내외 / 자유공모형(혁신기업형) 80억원 내외 32개 내외",
+      "confidence": 0.97,
+      "importance": "medium"
+    },
+    {
+      "category": "제도",
+      "label": "3책5공 적용",
+      "value": "연구자 최대 5개 과제(책임자 최대 3개) 동시수행 제한 제도 적용",
+      "value_type": "text",
+      "source_page": 5,
+      "source_quote": "본 사업은 3책5공 제도를 적용하는 사업임",
+      "confidence": 0.9,
+      "importance": "medium"
+    }
+  ],
+  "source_pages": {
+    "target": 4,
+    "benefit": 3,
+    "total_budget": 3,
+    "deadline": 6,
+    "application_period_start": 6,
+    "submission_system": 6,
+    "required_documents": 6,
+    "process_steps": 7,
+    "exclusion_conditions": 5
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "_comment": "AJIN BizAI 모델별 단가 (USD per 1M tokens). Phase 0 검증 후 실제 값 채움.",
+  "_source": "PRD v0.2 FINAL §14.2.2 / test_01_model_strategy.md §1.7.1",
+  "_last_verified": "YYYY-MM-DD",
+  "_phase_0_action_items": [
+    "1. OpenAI console에서 현재 운영 중인 모델 ID 확인 (https://platform.openai.com/docs/models)",
+    "2. Anthropic console에서 현재 운영 중인 모델 ID 확인 (https://www.anthropic.com/pricing)",
+    "3. 본 파일의 input/cached_input/output 단가 USD per 1M tokens로 채움",
+    "4. _last_verified 날짜 갱신",
+    "5. local/2_work/reports/{date}_models_pricing_verified.md 보고서 작성"
+  ],
+  "exchange_rate_usd_to_krw": 1400,
+  "providers": {
+    "openai": {
+      "_console": "https://platform.openai.com/api/pricing",
+      "_models_list": "https://api.openai.com/v1/models (실제 호출로 검증)",
+      "models": {
+        "OPENAI_MODEL_ANALYSIS": {
+          "_role": "분석 단계 (notice_analyst / form_parser / company_analyzer)",
+          "actual_model_id": null,
+          "input_per_1m_usd": null,
+          "cached_input_per_1m_usd": null,
+          "output_per_1m_usd": null,
+          "context_window": null
+        },
+        "OPENAI_MODEL_DRAFT": {
+          "_role": "draft_writer / draft_rewriter (Phase 7-A A/B 후보)",
+          "actual_model_id": null,
+          "input_per_1m_usd": null,
+          "cached_input_per_1m_usd": null,
+          "output_per_1m_usd": null,
+          "context_window": null
+        }
+      }
+    },
+    "anthropic": {
+      "_console": "https://www.anthropic.com/pricing",
+      "_models_list": "https://api.anthropic.com/v1/models",
+      "models": {
+        "ANTHROPIC_MODEL_HAIKU": {
+          "_role": "evidence_extractor / evidence_mapper / missing_material",
+          "actual_model_id": "claude-haiku-4-5",
+          "input_per_1m_usd": null,
+          "cached_input_per_1m_usd": null,
+          "output_per_1m_usd": null,
+          "context_window": null
+        },
+        "ANTHROPIC_MODEL_SONNET": {
+          "_role": "draft_writer 후보 (Phase 7-A A/B)",
+          "actual_model_id": "claude-sonnet-4-6",
+          "input_per_1m_usd": null,
+          "cached_input_per_1m_usd": null,
+          "output_per_1m_usd": null,
+          "context_window": null
+        },
+        "ANTHROPIC_MODEL_OPUS": {
+          "_role": "premium_final_writer 전용 (PRD §14.2.4) — 기본 draft_writer 사용 금지",
+          "actual_model_id": "claude-opus-4-7",
+          "input_per_1m_usd": null,
+          "cached_input_per_1m_usd": null,
+          "output_per_1m_usd": null,
+          "context_window": null
+        }
+      }
+    },
+    "embedding": {
+      "_role": "참고자료 evidence chunk 임베딩",
+      "models": {
+        "bge-m3-ko": {
+          "_local": true,
+          "_cost": "전기료만 (RTX 5060)",
+          "dimensions": 1024,
+          "input_per_1m_usd": 0,
+          "output_per_1m_usd": 0
+        },
+        "openai-large": {
+          "_fallback": true,
+          "actual_model_id": "text-embedding-3-large",
+          "input_per_1m_usd": null,
+          "dimensions": null
+        }
+      }
+    }
+  }
+}

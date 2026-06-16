@@ -1,0 +1,9 @@
+{
+  "draft_item_id": "draft_test_001",
+  "question_id": "I-1",
+  "content": "AJIN BizAI 주식회사는 2022년 설립되어 정부 지원사업 신청서 자동화 SaaS를 개발 중인 AI 스타트업입니다. AI 영상 처리 기반 공정 불량 검출 시스템을 자체 개발하였으며 (특허 10-2023-XXXXXXX), 제조 현장 MES 도입 컨설팅 5건의 실적을 보유하고 있습니다. 본 사업을 통해 ...",
+  "used_evidence_ids": ["ev_tech_001"],
+  "criteria_addressed": ["기술성"],
+  "char_count": 768,
+  "status": "generated"
+}

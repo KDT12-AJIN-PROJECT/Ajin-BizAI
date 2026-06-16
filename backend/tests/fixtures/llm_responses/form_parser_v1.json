@@ -1,0 +1,95 @@
+{
+  "form_id": "form_001",
+  "form_name": "사업계획서_표준양식.pdf",
+  "source_file": "사업계획서_표준양식.pdf",
+  "sections": [
+    {
+      "section_id": "I",
+      "title": "I. 신청기업 개요",
+      "order": 1,
+      "questions": [
+        {
+          "question_id": "I-1",
+          "title": "기업 현황",
+          "original_text": "기업 일반 현황(설립일·자본금·매출 등) 및 주요 사업 영역을 기술",
+          "requirement": "기업 일반 현황 및 사업 영역",
+          "writing_guidelines": [],
+          "example_text": [],
+          "constraints": {"max_length": 800, "min_length": 200, "format": null, "page_limit": null},
+          "required_evidence_types": [],
+          "required_attachments": [],
+          "do_not_include": [],
+          "warnings": [],
+          "source_page": 3,
+          "source_block_id": null,
+          "is_required": true,
+          "is_table_item": false,
+          "table_columns": [],
+          "table_rows": [],
+          "table_cell_hints": {},
+          "order": 1
+        },
+        {
+          "question_id": "I-2",
+          "title": "주요 제품/서비스",
+          "requirement": "주력 제품·서비스 개요와 시장 위치",
+          "constraints": {"max_length": 1000, "min_length": 0, "format": null, "page_limit": null},
+          "is_required": true,
+          "is_table_item": false,
+          "table_columns": [],
+          "table_rows": [],
+          "table_cell_hints": {},
+          "source_page": 4,
+          "order": 2
+        }
+      ]
+    },
+    {
+      "section_id": "III",
+      "title": "III. 사업 추진 계획",
+      "order": 3,
+      "questions": [
+        {
+          "question_id": "III-1",
+          "title": "기술 개발 계획",
+          "requirement": "기술 개발 목표·내용·방법 기술",
+          "constraints": {"max_length": 2000, "min_length": 0, "format": null, "page_limit": null},
+          "required_evidence_types": ["보유 기술"],
+          "is_required": true,
+          "is_table_item": false,
+          "table_columns": [],
+          "table_rows": [],
+          "table_cell_hints": {},
+          "source_page": 8,
+          "order": 1
+        },
+        {
+          "question_id": "III-T1",
+          "title": "추진 일정표",
+          "requirement": "분기별 마일스톤 표 작성 — 작성자가 분기 행을 자유롭게 추가",
+          "constraints": {"max_length": 0, "min_length": 0, "format": "표", "page_limit": null},
+          "is_required": true,
+          "is_table_item": true,
+          "table_columns": ["분기", "주요 활동", "산출물"],
+          "table_rows": [],
+          "table_cell_hints": {},
+          "source_page": 9,
+          "order": 2
+        },
+        {
+          "question_id": "III-T2",
+          "title": "최근 3년 매출 현황",
+          "requirement": "2023~2025년 매출·영업이익 기재",
+          "constraints": {"max_length": 0, "min_length": 0, "format": "표", "page_limit": null},
+          "is_required": true,
+          "is_table_item": true,
+          "table_columns": ["연도", "매출액", "영업이익", "영업이익률"],
+          "table_rows": ["2023년", "2024년", "2025년"],
+          "table_cell_hints": {"매출액": "백만원", "영업이익": "백만원", "영업이익률": "%"},
+          "source_page": 10,
+          "order": 3
+        }
+      ]
+    }
+  ]
+}

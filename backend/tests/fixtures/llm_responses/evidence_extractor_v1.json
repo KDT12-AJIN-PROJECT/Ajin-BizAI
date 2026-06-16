@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "evidence_id": "ev_market_001",
+      "source_file": "시장조사_2024.pdf",
+      "source_page": 12,
+      "type": "정량 실적",
+      "content": "국내 스마트팩토리 시장 규모: 2024년 5.2조원, 연평균 12% 성장 (KOSIS)",
+      "raw_text": "스마트팩토리 시장 규모는 2024년 기준 5.2조원..."
+    },
+    {
+      "evidence_id": "ev_tech_001",
+      "source_file": "특허증_제조AI.pdf",
+      "source_page": 1,
+      "type": "인증/특허",
+      "content": "AI 기반 공정 불량 검출 시스템 (특허 10-2023-XXXXXXX)",
+      "raw_text": "발명의 명칭: AI 기반 공정 불량 검출..."
+    }
+  ]
+}

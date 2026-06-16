@@ -1,0 +1,123 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Env (실제 값 노출 금지 — .env.example만 commit)
+.env
+.env.local
+backend/.env
+backend/.env.local
+web-react/.env
+web-react/.env.local
+web-react/.env.server
+
+# DB
+backend/ajin.db
+backend/*.db.backup*
+backend/*.db.bak*
+backend/backups/
+
+# Form parser debug 산출물 (FORM_PARSER_DEBUG=true 시 생성)
+backend/data/sessions/
+
+# Node
+node_modules/
+dist/
+zwaste/
+
+# Personal local-only folder
+local/
+
+# Personal Claude Code instructions (not shared)
+CLAUDE.md
+
+# Claude Code
+.claude/
+
+# Playwright e2e (Phase 4-H B2)
+test-results/
+web-react/test-results/
+web-react/playwright-report/
+web-react/blob-report/
+web-react/playwright/.cache/
+
+# Backend uploads (Phase 4-H A3 디스크 BLOB)
+backend/data/uploads/
+
+# Personal blog working directory + local Claude rules (do not commit)
+.blog/
+CLAUDE.local.md
+
+# ─── 2026-05-25 추가: GitHub 용량 절감 ───────────────────────────────
+
+# 로그 (uvicorn / vite / 일반)
+*.log
+backend/*.log
+backend/backend_*.log
+web-react/vite.log
+
+# 임시 디버그 페이로드 (curl 테스트 입력/출력)
+backend/test_*.json
+backend/test_*.hwpx
+backend/test_*.docx
+backend/empty_payload.json
+backend/notice_payload.json
+/test_payload.json
+
+# Vector store 자동 생성 (chromadb persistent)
+backend/chroma_data/
+backend/chromadb/
+
+# backend data 전체 (sessions debug / uploads BLOB) — 위 두 항목 통합 안전망
+backend/data/
+
+# Root 0바이트 SQLite (실제 DB는 backend/ajin.db)
+/ajin.db
+/ajin*.db
+
+# Python 빌드/캐시
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+__pypackages__/
+*.pyc
+*.pyo
+*.pyd
+
+# Vite/React 빌드 산출물 + 캐시
+web-react/build/
+web-react/coverage/
+web-react/.vite/
+.vite/
+
+# OS / 시스템 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# IDE / 에디터
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 사용자 작업물 / 스크린샷 (root + 일반)
+*.pptx
+*.pptx~
+screencapture-*.png
+~$*.docx
+~$*.xlsx
+
+# 사용자 개인 가이드 (필요 시 별도 위치로 이동 후 commit)
+LLM_API_*.md
+아진_역할분담.md

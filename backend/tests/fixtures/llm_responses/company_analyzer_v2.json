@@ -1,0 +1,81 @@
+{
+  "company": {
+    "company_profile_id": "company_test_v2",
+    "name": "테스트제조㈜",
+    "representative": "홍길동",
+    "industry": "제조업 / 자동차 부품",
+    "founded": "2015-01-01",
+    "address": "경기도 성남시",
+    "phone": "",
+    "capabilities": [
+      {
+        "capability_id": "cap_001",
+        "name": "AI 영상 처리 시스템 개발",
+        "description": "공정 영상 기반 불량 검출 모듈 3건 보유 — 회사소개서_2026.pdf p.4",
+        "confidence": 0.88,
+        "source": "회사소개서_2026.pdf p.4"
+      },
+      {
+        "capability_id": "cap_002",
+        "name": "스마트공장 보급사업 수행 실적",
+        "description": "산업부 스마트공장 보급사업 1건 (2023) — 정부과제실적.pdf p.2",
+        "confidence": 0.92,
+        "source": "정부과제실적.pdf p.2"
+      },
+      {
+        "capability_id": "cap_003",
+        "name": "주요 제품: PMS-AI 플랫폼",
+        "description": "사용자 입력 기반 정보 (User Provided Company Profile.main_products)",
+        "confidence": 0.6,
+        "source": "사용자 입력"
+      }
+    ]
+  },
+  "fit_analysis": {
+    "session_id": "session_test_v2",
+    "company_profile_id": "company_test_v2",
+    "axes": [
+      {
+        "name": "기술성",
+        "weight": 40,
+        "score": 32,
+        "level": "높음",
+        "level_color": "success",
+        "description": "AI 영상 처리 + 스마트공장 실적 (회사소개서_2026.pdf, 정부과제실적.pdf)",
+        "evidence": ["회사소개서_2026.pdf", "정부과제실적.pdf"],
+        "recommendation": "특허 정량 실적 보강 권장"
+      },
+      {
+        "name": "사업성",
+        "weight": 30,
+        "score": 14,
+        "level": "중간",
+        "level_color": "warning",
+        "description": "시장 규모 외부 자료 부족",
+        "evidence": [],
+        "recommendation": "시장조사 보고서·LOI 보강"
+      },
+      {
+        "name": "수행역량",
+        "weight": 30,
+        "score": 10,
+        "level": "낮음",
+        "level_color": "error",
+        "description": "유사 프로젝트 1건 — 정량 실적 부족",
+        "evidence": ["정부과제실적.pdf"],
+        "recommendation": "성과보고서 정량 지표 보강"
+      }
+    ],
+    "overall_score": 56
+  },
+  "warnings": [
+    {
+      "warning_code": "company_file_truncated",
+      "file_id": "file_test_001",
+      "filename": "회사소개서_2026.pdf",
+      "original_chars": 18000,
+      "returned_chars": 12000,
+      "truncation_policy": "head_only"
+    }
+  ]
+}

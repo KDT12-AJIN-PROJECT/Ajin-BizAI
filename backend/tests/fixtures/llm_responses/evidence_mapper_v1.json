@@ -1,0 +1,31 @@
+{
+  "session_id": "session_test",
+  "question_mappings": [
+    {
+      "question_id": "I-1",
+      "matched_evidence_ids": ["ev_tech_001"],
+      "used_evidence_ids": ["ev_tech_001"],
+      "confidence_score": 0.85,
+      "missing_evidence_types": [],
+      "match_status": "auto_confirmed"
+    },
+    {
+      "question_id": "I-2",
+      "matched_evidence_ids": ["ev_market_001"],
+      "used_evidence_ids": ["ev_market_001"],
+      "confidence_score": 0.78,
+      "missing_evidence_types": [],
+      "match_status": "auto_confirmed"
+    },
+    {
+      "question_id": "III-1",
+      "matched_evidence_ids": ["ev_tech_001"],
+      "used_evidence_ids": ["ev_tech_001"],
+      "confidence_score": 0.72,
+      "missing_evidence_types": [],
+      "match_status": "auto_confirmed"
+    }
+  ],
+  "overall_missing_count": 1,
+  "coverage_rate": 0.75
+}

@@ -1,0 +1,33 @@
+services:
+  backend:
+    build: ../backend
+    restart: always
+    volumes:
+      - ajin_db:/app/data
+    env_file:
+      - ../backend/.env
+
+  app:
+    build:
+      context: .
+      args:
+        VITE_API_BASE_URL: ""
+        VITE_LM_STUDIO_TOKEN: "${VITE_LM_STUDIO_TOKEN}"
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - backend
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    restart: always
+    command: tunnel --no-autoupdate run
+    network_mode: "service:app"
+    depends_on:
+      - app
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+
+volumes:
+  ajin_db:

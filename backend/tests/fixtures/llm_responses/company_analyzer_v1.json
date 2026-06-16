@@ -1,0 +1,60 @@
+{
+  "company_schema": {
+    "company_profile_id": "anonymous",
+    "name": "AJIN BizAI 주식회사",
+    "industry": "AI/SaaS",
+    "capabilities": [
+      {
+        "capability_id": "cap_ai_vision",
+        "name": "AI 영상 처리 시스템 개발",
+        "description": "공정 불량 검출용 AI 영상 처리 기술 보유",
+        "confidence": 0.85,
+        "source": "회사소개서_2026.pdf p.4"
+      },
+      {
+        "capability_id": "cap_mes",
+        "name": "MES 시스템 통합 경험",
+        "description": "제조 현장 MES 도입 컨설팅 5건",
+        "confidence": 0.75,
+        "source": "사업실적_2024.pdf p.7"
+      }
+    ]
+  },
+  "fit_analysis": {
+    "session_id": "session_test",
+    "company_profile_id": "anonymous",
+    "axes": [
+      {
+        "name": "기술성",
+        "weight": 40,
+        "score": 32,
+        "level": "중간",
+        "level_color": "success",
+        "description": "AI 영상 처리 보유 + 관련 특허 2건",
+        "evidence": ["회사소개서_2026.pdf", "특허증_제조AI.pdf"],
+        "recommendation": "추가 정량 실적 보강 권장"
+      },
+      {
+        "name": "사업성",
+        "weight": 30,
+        "score": 21,
+        "level": "중간",
+        "level_color": "success",
+        "description": "MES 도입 컨설팅 실적",
+        "evidence": ["사업실적_2024.pdf"],
+        "recommendation": "고객사 LOI 추가 확보 권장"
+      },
+      {
+        "name": "수행역량",
+        "weight": 30,
+        "score": 18,
+        "level": "낮음",
+        "level_color": "warning",
+        "description": "AI 전문 인력 보유, 단 제조 도메인 경험 제한",
+        "evidence": ["인력현황_2026.pdf"],
+        "recommendation": "제조 도메인 자문위원 영입"
+      }
+    ],
+    "overall_score": 71
+  }
+}

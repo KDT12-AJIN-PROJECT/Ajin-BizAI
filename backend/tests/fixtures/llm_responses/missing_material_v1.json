@@ -1,0 +1,24 @@
+{
+  "missing_materials": [
+    {
+      "missing_id": "miss_market_001",
+      "session_id": "session_test",
+      "question_id": "II-1",
+      "missing_type": "정량 데이터",
+      "name": "최근 3년 시장 규모 통계",
+      "description": "KOSIS 또는 산업연구원의 해당 산업 시장 규모 (연도별 매출액 또는 출하액)",
+      "input_type": "file",
+      "status": "open"
+    },
+    {
+      "missing_id": "miss_loi_001",
+      "session_id": "session_test",
+      "question_id": "III-2",
+      "missing_type": "계약서 LOI",
+      "name": "파트너사 LOI 또는 MOU",
+      "description": "예상 고객사 또는 협력사의 의향서 (Letter of Intent)",
+      "input_type": "file",
+      "status": "open"
+    }
+  ]
+}
