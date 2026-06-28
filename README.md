@@ -5,7 +5,7 @@
 
 🎬 **[▶️ 시연 영상 보기](https://drive.google.com/file/d/1T2TqIDPJeB4YkqqvK7BmgSZLANvfTY_6/view?usp=drive_link)**  ·  🏆 **KDT12 경진대회 본선 진출**
 
-![AJIN BizAI 대시보드](docs/01_dashboard.png)
+![AJIN BizAI — AI 공고 분석](docs/hero_analysis.png)
 
 ---
 
@@ -37,17 +37,17 @@
 
 건당 20시간 안팎이 걸리던 작성 과정을 6시간 수준으로 줄이는 것을 목표로 했습니다.
 
-위 대시보드에서 작성 중인 사업계획서, 마감 임박 공고, 최근 평가 결과(커트라인 대비 점수)를 한 화면에서 확인할 수 있습니다.
+위 화면은 공고문 원문(FACT)과 AI가 구조화한 해석을 나란히 보여주는 **AI 분석 단계**입니다. 지원 요건·제안서 전략·탈락 방지 체크리스트를 자동으로 정리하고, 평가기준까지 추출합니다.
 
 <details>
-<summary><b>📸 주요 화면 더 보기</b> — 공고 검색 · AI 분석 · 초안 작성</summary>
+<summary><b>📸 주요 화면 더 보기</b> — 대시보드 · 공고 검색 · 초안 작성</summary>
 
 <br/>
 
-| 공고 검색 | Step 2. AI 분석 | Step 3. AI 초안 작성 |
+| 대시보드 | 공고 검색 | Step 3. AI 초안 작성 |
 |:---:|:---:|:---:|
-| ![공고 검색](docs/02_notice_search.png) | ![AI 분석](docs/03_step2_analysis.png) | ![AI 초안 작성](docs/04_step3_draft.png) |
-| 공공데이터 4종 통합(1,000건+)<br/>적합도·D-day 표시 | 원문(FACT) ↔ AI 구조화 해석<br/>평가기준 자동 추출 | 항목 트리·작성·보완자료 3-pane<br/>근거 기반 초안 |
+| ![대시보드](docs/01_dashboard.png) | ![공고 검색](docs/02_notice_search.png) | ![AI 초안 작성](docs/04_step3_draft.png) |
+| 작성 중·마감 임박·평가 결과<br/>한 화면에서 확인 | 공공데이터 4종 통합(1,000건+)<br/>적합도·D-day 표시 | 항목 트리·작성·보완자료 3-pane<br/>근거 기반 초안 |
 
 </details>
 
